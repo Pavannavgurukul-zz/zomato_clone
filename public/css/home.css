@@ -1,0 +1,26 @@
+*{
+  margin:0px;
+}
+
+.header {
+  padding: 20px;
+  text-align: right;
+  background: #1abc9c;
+  color: white;
+  font-size: 20px;
+}
+
+.home_btn{
+  float:left;
+}
+
+button:hover{
+  background: yellow;
+}
+
+button{
+  padding:20px;
+  width:120px;
+  border-style: none;
+
+}

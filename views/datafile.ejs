@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Zomato_clone</title>
+  <link href="/css/home.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+</head>
+<script>
+    $(document).ready(function() {
+    $('#pdf').change(function() {
+      var newurl = $('#pdf').val();
+      $('a.target').attr('href', newurl);
+      console.log(newurl);
+    });
+});
+</script>
+
+<body>
+
+  <div class="main_div">
+    <div class="header">
+      <button class="home_btn" >Home</button>
+      <button class="logout_btn", onclick = "location.href='http://localhost:5000/home';">Logout</button>
+    </div>
+
+<div>
+        <h4>Search for the restraurants by city name.</h4>
+        <input id="my_input" type="textbox" value="pavan">
+        <a href=""></a>
+        <button id="search_btn">Search</button>
+    </div>
+    <div id="main_data">
+        
+
+    </div>
+    
+
+  </div>
+</body>
+
+</html>
