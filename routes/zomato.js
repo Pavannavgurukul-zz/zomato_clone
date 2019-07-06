@@ -35,7 +35,7 @@ module.exports = function(zomato, client) {
               restraurants.push(need)
             });
             //******loop block******//
-            return response.render('datafile', {restraurants:restraurants});
+            return response.json(restraurants);
 
           } else {
             console.log(err);

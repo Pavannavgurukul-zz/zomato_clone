@@ -1,21 +1,15 @@
 // here I am using the file of database connection named knexfile.
 const knex = require('./knexfile');
+// console.log(knex);
+
 
 //here I am inporting the date module
-// const date = require('date-and-time');
 var datetime = new Date();
 var today = datetime.toISOString().slice(0, 10);
 // creating the server for routing.
 const express = require('express');
 var app = express();
 app.use(express.json());
-
-
-// here we are using the data for Json Web Token.
-const jwt = require('jsonwebtoken');
-// const config = require('./config');
-// const middleware = require('./middleware');
-
 
 // here I am using the ejs syntex for connection to node js
 const ejs = require('ejs');
@@ -44,7 +38,7 @@ require('./routes/home')(home,express);
 // creating the routes for get and post the data for customers.
 var customers = express.Router();
 app.use('/customers', customers)
-require('./routes/customers')(customers, knex, today, jwt);
+require('./routes/customers')(customers, knex, today);
 
 // here  I am creating the route for zomato api
 var zomato = express.Router();
