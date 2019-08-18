@@ -11,7 +11,7 @@ const express = require('express');
 var app = express();
 app.use(express.json());
 
-// here I am using the ejs syntex for connection to node js
+// here I am using the ejs syntax for connection to node js
 const ejs = require('ejs');
 app.set('view engine', 'ejs');
 
